@@ -1,6 +1,7 @@
 package com.example.bankingbackendapi.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -24,10 +25,12 @@ public class Transaction {
 
     @ManyToOne
     @JoinColumn(name = "from_account_id")
+    @JsonIgnore
     private Account fromAccount;
 
     @ManyToOne
     @JoinColumn(name = "to_account_id")
+    @JsonIgnore
     private Account toAccount;
 
     private LocalDateTime timestamp = LocalDateTime.now();
