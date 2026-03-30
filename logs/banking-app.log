@@ -83,3 +83,5 @@
 2026-03-30T22:59:38.629+03:00  WARN 36194 --- [Banking-Backend-API] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
 2026-03-30T22:59:49.856+03:00  INFO 36194 --- [Banking-Backend-API] [http-nio-8080-exec-9] c.e.b.service.BankService                : Transfer: from=123, to=456, amount=1000000.0
 2026-03-30T22:59:53.570+03:00  WARN 36194 --- [Banking-Backend-API] [http-nio-8080-exec-10] c.e.b.service.BankService                : Withdraw request: account=123, amount=1850.0
+2026-03-30T23:01:05.634+03:00  INFO 36194 --- [Banking-Backend-API] [http-nio-8080-exec-3] c.e.b.service.BankService                : Deposit request: account=123, amount=9000000.0
+2026-03-30T23:01:06.314+03:00  INFO 36194 --- [Banking-Backend-API] [http-nio-8080-exec-4] c.e.b.service.BankService                : Deposit request: account=123, amount=9000000.0
